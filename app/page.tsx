@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
 function Home() {
   return (
@@ -8,27 +9,9 @@ function Home() {
         <Navbar />
 
         <main>
-          {/* HEADER */}
-          <div className="h-64 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] p-2">
-            <div className="text-center mt-10">
-              <h1 className="text-white text-5xl font-bold mb-2">
-                Find your table for any occasion
-              </h1>
-              {/* SEARCH BAR */}
-              <div className="text-left text-lg py-3 m-auto flex justify-center">
-                <input
-                  className="rounded  mr-3 p-2 w-[450px]"
-                  type="text"
-                  placeholder="State, city or town"
-                />
-                <button className="rounded bg-red-600 px-9 py-2 text-white">
-                  Let's go
-                </button>
-              </div>
-              {/* SEARCH BAR */}
-            </div>
-          </div>
-          {/* HEADER */} {/* CARDS */}
+          <Header />
+
+          {/* CARDS */}
           <div className="py-3 px-36 mt-10 flex flex-wrap justify-center">
             {/* CARD */}
             <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer">
